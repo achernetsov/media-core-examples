@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>sine-play-example</module>
+        <module>audio-play-example</module>
         <module>sine-record-example</module>
     </modules>
     <packaging>pom</packaging>

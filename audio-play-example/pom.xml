@@ -9,13 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>sine-record-example</artifactId>
+    <artifactId>audio-play-example</artifactId>
 
     <!-- install dependencies locally (mvn install) from https://github.com/Spinoco/mediaserver -->
     <dependencies>
         <dependency>
             <groupId>org.restcomm.media.core.resource</groupId>
-            <artifactId>media-core-resource-recorder</artifactId>
+            <artifactId>media-core-resource-player</artifactId>
             <version>${media.core.version}</version>
         </dependency>
     </dependencies>
