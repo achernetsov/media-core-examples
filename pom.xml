@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>tech.ivoice</groupId>
+    <artifactId>media-core-examples-parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>sine-play-example</module>
+        <module>sine-record-example</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <media.core.version>8.2.0-SNAPSHOT</media.core.version>
+    </properties>
+
+    <description>
+        Examples of apps built on Restcomm media-core components.
+    </description>
+
+    <organization>
+        <name>Ivoice Technology</name>
+        <url>https://ivoice.tech/</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>GNU Affero General Public License v3.0</name>
+            <url>https://www.gnu.org/licenses/agpl-3.0.txt</url>
+        </license>
+    </licenses>
+    <inceptionYear>2021</inceptionYear>
+
+    <developers>
+        <developer>
+            <id>achernetsov</id>
+            <name>Artyom Chernetsov</name>
+            <url>https://archertech.ru</url>
+            <organization>Ivoice Technology</organization>
+            <organizationUrl>https://ivoice.tech/</organizationUrl>
+            <roles>
+                <role>author</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+</project>

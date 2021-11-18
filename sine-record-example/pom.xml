@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>media-core-examples-parent</artifactId>
+        <groupId>tech.ivoice</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sine-record-example</artifactId>
+
+    <!-- dependencies installed locally (mvn install) from https://github.com/Spinoco/mediaserver -->
+    <dependencies>
+        <dependency>
+            <groupId>org.restcomm.media.core.resource</groupId>
+            <artifactId>media-core-resource-recorder</artifactId>
+            <version>${media.core.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
