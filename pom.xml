@@ -10,8 +10,6 @@
     <modules>
         <module>sine-play-example</module>
         <module>audio-play-example</module>
-        <module>sine-record-example</module>
-        <module>rtp-example</module>
     </modules>
     <packaging>pom</packaging>
 
