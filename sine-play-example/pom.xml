@@ -14,8 +14,8 @@
     <!-- dependencies installed locally (mvn install) from https://github.com/Spinoco/mediaserver -->
     <dependencies>
         <dependency>
-            <groupId>org.restcomm.media.core</groupId>
-            <artifactId>media-core-component</artifactId>
+            <groupId>org.mobicents.media</groupId>
+            <artifactId>components</artifactId>
             <version>${media.core.version}</version>
         </dependency>
     </dependencies>

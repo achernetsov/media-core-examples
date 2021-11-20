@@ -1,20 +1,14 @@
 package tech.ivoice.examples;
 
-import org.restcomm.media.core.component.audio.AudioComponent;
-import org.restcomm.media.core.component.audio.AudioMixer;
-import org.restcomm.media.core.component.audio.SoundCard;
-import org.restcomm.media.core.resource.player.audio.AudioPlayerImpl;
-import org.restcomm.media.core.resource.player.audio.DirectRemoteStreamProvider;
-import org.restcomm.media.core.resource.player.audio.RemoteStreamProvider;
-import org.restcomm.media.core.scheduler.Clock;
-import org.restcomm.media.core.scheduler.PriorityQueueScheduler;
-import org.restcomm.media.core.scheduler.WallClock;
 
-/**
- * Sine generates audio on defined frequency. This audio is played.
- *
- * @see org.restcomm.media.core.component.audio.SoundCard
- */
+import org.mobicents.media.server.component.audio.AudioComponent;
+import org.mobicents.media.server.component.audio.AudioMixer;
+import org.mobicents.media.server.component.audio.SoundCard;
+import org.mobicents.media.server.impl.resource.mediaplayer.audio.AudioPlayerImpl;
+import org.mobicents.media.server.scheduler.Clock;
+import org.mobicents.media.server.scheduler.PriorityQueueScheduler;
+import org.mobicents.media.server.scheduler.WallClock;
+
 public class AudioPlayExample {
     private final AudioPlayerImpl audioPlayer;
     private final SoundCard soundCard;
@@ -29,8 +23,7 @@ public class AudioPlayExample {
         scheduler = new PriorityQueueScheduler();
         scheduler.setClock(clock);
 
-        RemoteStreamProvider remoteStreamProvider = new DirectRemoteStreamProvider();
-        audioPlayer = new AudioPlayerImpl("player", scheduler, remoteStreamProvider);
+        audioPlayer = new AudioPlayerImpl("player", scheduler);
         soundCard = new SoundCard(scheduler);
 
         AudioComponent playerAudioComponent = new AudioComponent(1);

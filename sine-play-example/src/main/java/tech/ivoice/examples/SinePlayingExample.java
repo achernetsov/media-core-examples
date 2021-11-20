@@ -1,18 +1,18 @@
 package tech.ivoice.examples;
 
-import org.restcomm.media.core.component.audio.AudioComponent;
-import org.restcomm.media.core.component.audio.AudioMixer;
-import org.restcomm.media.core.component.audio.Sine;
-import org.restcomm.media.core.component.audio.SoundCard;
-import org.restcomm.media.core.scheduler.Clock;
-import org.restcomm.media.core.scheduler.PriorityQueueScheduler;
-import org.restcomm.media.core.scheduler.WallClock;
+import org.mobicents.media.server.component.audio.AudioComponent;
+import org.mobicents.media.server.component.audio.AudioMixer;
+import org.mobicents.media.server.component.audio.Sine;
+import org.mobicents.media.server.component.audio.SoundCard;
+import org.mobicents.media.server.scheduler.Clock;
+import org.mobicents.media.server.scheduler.PriorityQueueScheduler;
+import org.mobicents.media.server.scheduler.WallClock;
 
 /**
  * Sine generates audio on defined frequency. This audio is played.
  *
  * @see Sine
- * @see org.restcomm.media.core.component.audio.SoundCard
+ * @see SoundCard
  */
 public class SinePlayingExample {
     private final Sine sine;
